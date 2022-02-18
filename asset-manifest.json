@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/PolskaTag.github.io/static/css/main.b0e318b7.css",
+    "main.js": "/PolskaTag.github.io/static/js/main.65c0223f.js",
+    "static/js/787.1ed0c42c.chunk.js": "/PolskaTag.github.io/static/js/787.1ed0c42c.chunk.js",
+    "static/media/IMG_1774square.JPG": "/PolskaTag.github.io/static/media/IMG_1774square.fea0958bc5b12e3e3c42.JPG",
+    "index.html": "/PolskaTag.github.io/index.html",
+    "main.b0e318b7.css.map": "/PolskaTag.github.io/static/css/main.b0e318b7.css.map",
+    "main.65c0223f.js.map": "/PolskaTag.github.io/static/js/main.65c0223f.js.map",
+    "787.1ed0c42c.chunk.js.map": "/PolskaTag.github.io/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0e318b7.css",
+    "static/js/main.65c0223f.js"
+  ]
+}
