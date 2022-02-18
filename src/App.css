@@ -14,7 +14,9 @@
   --fw-bold: 900;
 
   --clr-light: #f6f6f6;
+  --clr-darkerLight: #f6f6f6;
   --clr-dark: #212121;
+  --clr-lighterDark: rgba(196, 196, 196, 0.1);
   --clr-accent: #346751;
   --clr-accent2: #c84b31;
 
@@ -26,12 +28,41 @@
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-bold);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  color: var(--clr-darkerLight);
+  font-weight: var(--fw-reg);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  color: var(--clr-darkerLight);
+  font-weight: var(--fw-reg);
+}
+
+p {
+  font-size: var(--fs-body);
+}
+
 body {
   padding: 0;
   margin: 0;
   background-color: #212121;
   font-family: var(--ff-primary);
   color: var(--clr-light);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  margin: 5rem;
+  padding-bottom: 14vh;
 }
 
 .main-nav {
@@ -61,10 +92,78 @@ body {
   font-size: 30px;
 }
 
-.philip-img img {
-  width: 600px;
-  height: 600px;
+.philip-img {
+  flex-grow: 1;
+  width: 50%;
+  height: auto;
+  align-self: right;
 }
 
-.home-text {
+.home {
+  display: flex;
+  /* align-items: stretch; */
+  justify-content: space-between;
+  flex-grow: 1;
 }
+
+.home .philip-img {
+  margin-left: 5rem;
+  flex-grow: 1;
+  flex-direction: row;
+  display: flex;
+  align-items: flex-end;
+  align-self: center;
+  justify-content: flex-end;
+}
+
+.philip-img img {
+  min-width: 300px;
+  max-width: 100%;
+  height: auto;
+}
+
+.home .home-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 5em;
+  align-self: center;
+}
+
+.home .home-text h1 {
+  align-items: flex-end;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  background-color: var(--clr-lighterDark);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.skills-item {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  background-color: #346751;
+  width: 200px;
+  max-width: 200px;
+  margin: 0.5rem;
+}
+.skills-item hr {
+  width: 150px;
+}
+
+/* work */

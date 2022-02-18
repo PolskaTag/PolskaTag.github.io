@@ -2,6 +2,8 @@ import gitLogo from "../resources/git-icon.png";
 function Work() {
   return (
     <section className="work">
+      <h1>Some things I've done.</h1>
+      <hr />
       <div className="work-item">
         <div className="work-item-left">
           <h2>WatchIT</h2>
