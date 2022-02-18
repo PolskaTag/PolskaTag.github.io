@@ -2,11 +2,12 @@ import gitLogo from "../resources/git-icon.png";
 function Work() {
   return (
     <section className="work">
-      <h1>Some things I've done.</h1>
-      <hr />
+      <h1 className="work-title">
+        Some things I've done. <hr />
+      </h1>
       <div className="work-item">
         <div className="work-item-left">
-          <h2>WatchIT</h2>
+          <h2 className="work-item-title">WatchIT</h2>
           <span>September - December</span>
           <p>
             Leading a team of 6 students, we built a user-defined action web
@@ -31,7 +32,7 @@ function Work() {
 
       <div className="work-item">
         <div className="work-item-left">
-          <h2>PeaceOfCake!</h2>
+          <h2 className="work-item-title">PeaceOfCake!</h2>
           <span>September - December</span>
           <p>
             A class project where I built a web application about my love for

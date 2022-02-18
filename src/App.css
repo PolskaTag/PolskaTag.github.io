@@ -70,6 +70,7 @@ section {
   align-items: center;
   justify-content: space-between;
   height: 100px;
+  border-bottom: 2px var(--clr-accent) solid;
 }
 
 .main-nav ul {
@@ -167,3 +168,93 @@ section {
 }
 
 /* work */
+.work-title {
+  display: block;
+  text-align: end;
+}
+
+.work hr {
+  position: flex;
+  background-color: var(--clr-accent);
+  height: 1px;
+  border: none;
+  width: 50%;
+  justify-items: flex-end;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.work-item {
+  display: flex;
+  flex-direction: row;
+  margin: 5rem 5rem;
+  padding: 0.5rem;
+  background-color: var(--clr-lighterDark);
+  box-shadow: inset 3px 3px 3px var(--clr-accent),
+    inset -3px -3px 3px var(--clr-accent);
+}
+
+.work-item-left {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 400px;
+  margin-left: 0.5rem;
+}
+
+.work-item-title {
+  margin: 0;
+}
+
+.work-item-left a {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  align-items: center;
+}
+
+.git-logo div {
+  margin-left: 0.5rem;
+}
+
+.work-item-mid {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  background-image: url(./resources/IMG_1774square.JPG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.work-item-right {
+  display: flex;
+  flex-direction: column;
+  /* flex-grow: 1; */
+  text-align: end;
+  margin-left: 2rem;
+}
+
+.work-item-right ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.work-item-right ul li {
+  background-color: var(--clr-accent);
+  padding: 2px;
+  border-radius: 5px;
+  width: auto;
+}
+
+/* Contact */
