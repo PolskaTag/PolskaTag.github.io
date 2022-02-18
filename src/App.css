@@ -98,6 +98,8 @@ section {
   width: 50%;
   height: auto;
   align-self: right;
+  box-shadow: 10px 5px 7px var(--clr-dark);
+  z-index: 2;
 }
 
 .home {
@@ -121,6 +123,7 @@ section {
   min-width: 300px;
   max-width: 100%;
   height: auto;
+  z-index: 2;
 }
 
 .home .home-text {
@@ -133,6 +136,17 @@ section {
 
 .home .home-text h1 {
   align-items: flex-end;
+}
+
+.home-title {
+  position: relative;
+  background-color: var(--clr-accent);
+  text-align: right;
+  /* padding: 1rem 0.5rem;
+  width: 150%;
+  left: -35vw; */
+  width: 175%;
+  left: -75%;
 }
 
 .about {
@@ -280,4 +294,25 @@ section {
 }
 .email-link:hover {
   background-color: rgba(109, 152, 134, 0.1);
+}
+
+/* Footer */
+.footer {
+  margin: 0 auto 0;
+  padding-bottom: 1rem;
+  max-width: 600px;
+}
+
+.plugs {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.creds {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  color: var(--clr-accent);
 }
