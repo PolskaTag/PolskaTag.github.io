@@ -8,14 +8,16 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar />
-      <Home />
-      <About />
-      <Work />
-      <Contact />
+      <div className="content">
+        <Home />
+        <About />
+        <Work />
+        <Contact />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
 
