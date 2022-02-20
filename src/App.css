@@ -120,7 +120,7 @@ body {
   position: relative;
   width: 100%;
   counter-reset: item 0;
-  z-index: 12;
+  z-index: 99;
   border-bottom: 2px var(--clr-accent) solid;
 }
 
@@ -132,6 +132,7 @@ body {
 
 .nav-links {
   display: flex;
+  margin-right: 2rem;
 }
 
 .main-nav ul {
@@ -578,6 +579,7 @@ body {
   transform: scale(1.2);
   height: auto;
   transition: var(--transition);
+  opacity: 0.98;
 }
 
 .project1 {
@@ -585,7 +587,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  opacity: 0.9;
+  opacity: 0.5;
 }
 
 .project2 {
@@ -593,7 +595,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  opacity: 0.9;
+  opacity: 0.5;
 }
 
 .project3 {
@@ -601,6 +603,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+  opacity: 0.5;
 }
 
 .work-item-right {
@@ -730,5 +733,8 @@ body {
   text-align: center;
   margin-top: 0.5rem;
   margin-bottom: 0;
+}
+
+.creds span {
   color: var(--clr-accent);
 }

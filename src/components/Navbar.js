@@ -1,4 +1,5 @@
 import pl from "../resources/PL.png";
+import resume from "../resources/PhilipLapinskiResume.pdf";
 
 function Navbar() {
   const activateHamburger = (e) => {
@@ -40,6 +41,11 @@ function Navbar() {
             </li>
             <li>
               <a href="#contact">Contact</a>
+            </li>
+            <li>
+              <a className="resume" href={resume} target="_blank">
+                Resume
+              </a>
             </li>
           </ul>
           <div className="burger" onClick={activateHamburger}>

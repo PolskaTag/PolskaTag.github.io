@@ -31,11 +31,10 @@ function Work() {
         <div className="work-item-mid project1"></div>
         <div className="work-item-right">
           <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
             <li>React</li>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>OpenCV</li>
-            <li>AWS</li>
           </ul>
         </div>
       </div>
