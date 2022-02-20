@@ -584,12 +584,13 @@ body {
   display: block;
   flex-grow: 2;
   width: 500px;
+  transition: var(--transition);
 }
 
 .work-item-mid:hover {
   transform: scale(1.2);
   height: auto;
-  transition: var(--transition);
+  /* transition: ease-in-out; */
   opacity: 0.98;
 }
 
