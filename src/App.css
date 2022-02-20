@@ -15,7 +15,7 @@
 
   --clr-light: #f6f6f6;
   --clr-darkerLight: #f6f6f6;
-  --clr-dark: #212121;
+  --clr-dark: rgb(33, 33, 33);
   --clr-lighterDark: rgba(196, 196, 196, 0.1);
   --clr-accent: #346751;
   --clr-accent2: #c84b31;
@@ -49,6 +49,14 @@ h3 {
 
 p {
   font-size: var(--fs-body);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+b {
+  color: var(--clr-accent2);
 }
 
 body {
@@ -254,10 +262,6 @@ body {
   align-self: center;
 }
 
-.home .home-text h1 {
-  align-items: flex-end;
-}
-
 .home-title {
   position: relative;
   background-color: var(--clr-accent);
@@ -271,10 +275,11 @@ body {
   text-decoration: none;
   border: var(--clr-accent) 2px solid;
   border-radius: 7px;
-  padding: 1rem;
+  padding: 1rem 2rem;
   margin-top: 50px;
   color: var(--clr-accent);
   transition: 0.3s;
+  font-weight: var(--fw-bold);
 }
 
 .resume:hover {
@@ -319,13 +324,21 @@ body {
 }
 
 .about-description {
-  flex-grow: 2;
+  flex-grow: 1;
+  /* width: 75%; */
+  height: 100%;
+  align-self: center;
+  margin-right: 5rem;
+}
+
+.about-description-tech {
+  position: relative;
+  bottom: 100%;
 }
 
 .about-image-container {
   display: flex;
   flex-grow: 1;
-  /* margin-left: 2rem; */
   justify-content: center;
   align-items: center;
 }
@@ -335,7 +348,10 @@ body {
   min-width: 200px;
   height: auto;
   transform: translateY(5%);
-  box-shadow: 6px -3px 10px var(--clr-accent);
+  box-shadow: 6px -3px 10px var(--clr-dark);
+  align-self: center;
+  justify-self: center;
+  border-radius: 8px;
 }
 
 .philip-utah-img-outline {
@@ -346,14 +362,15 @@ body {
 .philip-utah-img-outline:before {
   position: absolute;
   top: -5%;
-  left: 15%;
+  left: 10%;
   width: 65%;
   min-width: 200px;
   height: 100%;
   border: 4px solid rgba(177, 72, 27, 1);
+  border-radius: 8px;
   content: "";
   box-shadow: 4px -4px 20px var(--clr-accent);
-  background-color: var(--clr-lighterDark);
+  /* background-color: var(--clr-lighterDark); */
 }
 
 .skills {
@@ -389,13 +406,15 @@ body {
   color: var(--clr-dark);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .about-content-1 {
     display: flex;
     flex-direction: column-reverse;
   }
 
   .about-description {
+    padding: 0;
+    margin: 0;
     margin-bottom: 3rem;
   }
 
@@ -408,25 +427,29 @@ body {
 /* skill adjustments */
 .skill-1 {
   /* left: 30%; */
-  z-index: 10;
+  z-index: 11;
 }
 
 .skill-2 {
   /* left: 20%; */
-  z-index: 9;
+  z-index: 10;
 }
 
 .skill-3 {
   /* left: 10%; */
-  z-index: 8;
+  z-index: 9;
 }
 
 .skill-4 {
-  z-index: 7;
+  z-index: 8;
 }
 
 .skill-5 {
   /* left: 2vw; */
+  z-index: 7;
+}
+
+.skill-6 {
   z-index: 6;
 }
 
@@ -441,6 +464,10 @@ body {
 
 .skill-9 {
   z-index: 3;
+}
+
+.skill-10 {
+  z-index: 2;
 }
 /* end skill adjustments */
 
@@ -476,6 +503,7 @@ body {
 .work-title {
   display: block;
   text-align: end;
+  margin-right: 5rem;
 }
 
 .work hr {
@@ -571,6 +599,10 @@ body {
   .work-item {
     margin: 0rem 3rem 3rem;
   }
+
+  .work-title {
+    margin-right: 3rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -584,6 +616,10 @@ body {
 
   .work-item-mid {
     display: none;
+  }
+
+  .work-title {
+    margin-right: 0;
   }
 }
 

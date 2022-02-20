@@ -7,18 +7,19 @@ function About() {
       <div className="about-content-1">
         <div className="about-description">
           <h3>
-            I love creating things that are useful and fun. My interest for
-            programming started in 2014, when I was playing Minecraft and
+            I love <b>creating</b> things that are useful and fun. My interest
+            in programming started in 2014, when I was playing Minecraft and
             choosing my adventure.
           </h3>
           <h3>
             Over the spread of <b>8 years,</b> I’ve developed a range of
-            different projects. From text-based games to a light-weight security
-            web app, I’ve been exploring all the things you can do with a
+            different projects. From text-based games to a lightweight security
+            web app, I’ve been <b>exploring</b> all the things you can do with a
             computer and a brain.
           </h3>
-          <h3>
-            These are some of the most recent technologies I’ve been using:
+          <h3 className="about-description-tech">
+            These are some of the <b>most recent technologies</b> I’ve been
+            using:
           </h3>
         </div>
         <div className="about-image-container">

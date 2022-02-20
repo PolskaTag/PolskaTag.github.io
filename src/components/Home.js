@@ -10,8 +10,8 @@ function Home() {
       <div className="home-text">
         <h1 className="home-title">Hi, I'm Philip Lapinski.</h1>
         <h3>
-          I’m a software engineer who likes to bring complex ideas to life. My
-          current focus is to explore the varying realms of software
+          I’m a <b>software engineer</b> who likes to bring complex ideas to
+          life. My current focus is to explore the varying realms of software
           developement and see which one I can best serve.
         </h3>
         <a className="resume" href={resume} target="_blank">
