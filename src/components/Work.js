@@ -1,7 +1,7 @@
 import gitLogo from "../resources/git-icon.png";
 function Work() {
   return (
-    <section className="work">
+    <section className="work" id="work">
       <h1 className="work-title">
         Some things I've done. <hr />
       </h1>

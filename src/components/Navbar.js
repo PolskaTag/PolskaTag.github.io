@@ -23,23 +23,23 @@ function Navbar() {
       <nav className="main-nav">
         <div className="nav-logo-container">
           <a className="nav-logo">
-            <img src={pl}></img>
+            <img src={pl} href="#home"></img>
           </a>
         </div>
         <div className="nav-links-container">
           <ul className="nav-links">
             <li>
               {" "}
-              <a href="#">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li>
-              <a href="#">About Me</a>
+              <a href="#about">About Me</a>
             </li>
             <li>
-              <a href="#">My Work</a>
+              <a href="#work">My Work</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
           <div className="burger" onClick={activateHamburger}>
