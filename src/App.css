@@ -136,8 +136,13 @@ body {
   color: var(--clr-accent);
 }
 
-.nav-logo {
-  font-size: 30px;
+.nav-logo img {
+  position: relative;
+  text-decoration: none;
+  top: 10px;
+  width: 120px;
+  height: auto;
+  justify-self: center;
 }
 
 .burger {
@@ -175,7 +180,8 @@ body {
     position: absolute;
     right: 0px;
     height: 92vh;
-    top: 8vh;
+    top: 6.5vh;
+    padding: 0%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -190,6 +196,10 @@ body {
 
   .nav-links li {
     opacity: 0;
+  }
+
+  .nav-links li:hover {
+    font-weight: var(--fw-bold);
   }
 
   .burger {
@@ -257,6 +267,20 @@ body {
   padding: 2rem 0.5rem;
 }
 
+.resume {
+  text-decoration: none;
+  border: var(--clr-accent) 2px solid;
+  border-radius: 7px;
+  padding: 1rem;
+  margin-top: 50px;
+  color: var(--clr-accent);
+  transition: 0.3s;
+}
+
+.resume:hover {
+  background-color: rgba(109, 152, 134, 0.1);
+}
+
 @media screen and (max-width: 768px) {
   .home {
     display: flex;
@@ -278,6 +302,16 @@ body {
   flex-direction: column;
   margin-left: 5rem;
   margin-right: 5rem;
+}
+
+.about-title::after {
+  content: "";
+  display: block;
+  width: 4em;
+  height: 2px;
+  /* margin: 0.5em auto 1em; */
+  opacity: 0.5;
+  background: var(--clr-accent);
 }
 
 .about-content-1 {
@@ -445,12 +479,10 @@ body {
 }
 
 .work hr {
-  position: flex;
   background-color: var(--clr-accent);
   height: 1px;
   border: none;
-  width: 50%;
-  justify-items: flex-end;
+  width: 75%;
 }
 
 .work-item {

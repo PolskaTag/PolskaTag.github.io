@@ -1,3 +1,5 @@
+import pl from "../resources/PL.png";
+
 function Navbar() {
   const activateHamburger = (e) => {
     const nav = document.querySelector(".nav-links");
@@ -19,7 +21,11 @@ function Navbar() {
   return (
     <header className="navbar-header">
       <nav className="main-nav">
-        <div className="nav-logo">PL</div>
+        <div className="nav-logo-container">
+          <a className="nav-logo">
+            <img src={pl}></img>
+          </a>
+        </div>
         <div className="nav-links-container">
           <ul className="nav-links">
             <li>

@@ -1,4 +1,6 @@
 import philipImg from "../resources/IMG_1774square.JPG";
+import resume from "../resources/PhilipLapinskiResume.pdf";
+
 function Home() {
   return (
     <section className="home">
@@ -12,6 +14,9 @@ function Home() {
           current focus is building applications that interact with consumer
           items.
         </h3>
+        <a className="resume" href={resume} target="_blank">
+          Resume
+        </a>
       </div>
     </section>
   );

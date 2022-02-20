@@ -7,7 +7,12 @@ function Contact() {
         excitement for it, let me hear what it’s about! Whether local or across
         the globe, drop me a line :)
       </h3>
-      <a className="email-link" href="philiplapinski.pl@gmail.com" target="">
+      <a
+        className="email-link"
+        href="philiplapinski.pl@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         The Line :)
       </a>
     </section>

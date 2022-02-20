@@ -3,7 +3,7 @@ import philipUtah from "../resources/IMG_2168.JPG";
 function About() {
   return (
     <section className="about">
-      <h1>Who I Am.</h1>
+      <h1 className="about-title">Who I Am.</h1>
       <div className="about-content-1">
         <div className="about-description">
           <h3>
