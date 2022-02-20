@@ -37,7 +37,10 @@ function Footer() {
         </a>
       </div>
       <div className="creds">
-        <span>Designed & Built by Philip Lapinski</span>
+        <span>
+          Designed & Built by Philip Lapinski <br />
+        </span>
+        <span>PhilipLapinski.PL@gmail.com</span>
       </div>
     </section>
   );

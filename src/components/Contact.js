@@ -9,7 +9,7 @@ function Contact() {
       </h3>
       <a
         className="email-link"
-        href="philiplapinski.pl@gmail.com"
+        href="mailto:philiplapinski.pl@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
       >
