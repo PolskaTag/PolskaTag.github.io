@@ -58,6 +58,7 @@ body {
   font-family: var(--ff-primary);
   color: var(--clr-light);
   min-height: 100vh;
+  width: auto;
   display: flex;
   flex-direction: column;
   -webkit-font-smoothing: antialiased;
@@ -68,7 +69,13 @@ body {
   margin: 0 5rem;
 }
 
-/* section {
+@media screen and (max-width: 768px) {
+  .content {
+    margin: 0 3rem;
+  }
+}
+
+/* section {a
   margin: 5rem;
   padding-bottom: 14vh;
 } */
@@ -197,7 +204,8 @@ body {
   /* align-items: stretch; */
   justify-content: space-between;
   flex-grow: 1;
-  margin-top: 200px;
+  /* margin-top: 200px; */
+  min-height: 100vh;
 }
 
 .philip-img {
@@ -268,8 +276,50 @@ body {
 .about {
   display: flex;
   flex-direction: column;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.about-content-1 {
+  display: flex;
+}
+
+.about-description {
+  flex-grow: 2;
+}
+
+.about-image-container {
+  display: flex;
+  flex-grow: 1;
+  /* margin-left: 2rem; */
+  justify-content: center;
+  align-items: center;
+}
+
+.philip-utah-img {
+  max-width: 65%;
+  min-width: 200px;
+  height: auto;
+  transform: translateY(5%);
+  box-shadow: 6px -3px 10px var(--clr-accent);
+}
+
+.philip-utah-img-outline {
+  display: inline-block;
+  position: relative;
+}
+
+.philip-utah-img-outline:before {
+  position: absolute;
+  top: -5%;
+  left: 15%;
+  width: 65%;
+  min-width: 200px;
+  height: 100%;
+  border: 4px solid rgba(177, 72, 27, 1);
+  content: "";
+  box-shadow: 4px -4px 20px var(--clr-accent);
+  background-color: var(--clr-lighterDark);
 }
 
 .skills {
@@ -283,6 +333,83 @@ body {
   flex-wrap: wrap;
 }
 
+.skills-col {
+  display: flex;
+  flex-direction: column;
+  list-style: none !important;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+.skill {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  background-color: #c84b31;
+  border: 2px var(--clr-dark) solid;
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-bold);
+  box-shadow: 10px -4px 4px var(--clr-dark);
+  color: var(--clr-dark);
+}
+
+@media screen and (max-width: 768px) {
+  .about-content-1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .about-description {
+    margin-bottom: 3rem;
+  }
+
+  .about-image-container {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+}
+
+/* skill adjustments */
+.skill-1 {
+  /* left: 30%; */
+  z-index: 10;
+}
+
+.skill-2 {
+  /* left: 20%; */
+  z-index: 9;
+}
+
+.skill-3 {
+  /* left: 10%; */
+  z-index: 8;
+}
+
+.skill-4 {
+  z-index: 7;
+}
+
+.skill-5 {
+  /* left: 2vw; */
+  z-index: 6;
+}
+
+.skill-7 {
+  /* left: -3vw; */
+  z-index: 5;
+}
+
+.skill-8 {
+  z-index: 4;
+}
+
+.skill-9 {
+  z-index: 3;
+}
+/* end skill adjustments */
+
 .skills-item {
   display: flex;
   flex-grow: 1;
@@ -290,11 +417,18 @@ body {
   align-items: center;
   background-color: #346751;
   width: 200px;
+  min-width: 200px;
   max-width: 200px;
   margin: 0.5rem;
 }
 .skills-item hr {
   width: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    margin: 0;
+  }
 }
 
 /* work */
