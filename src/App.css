@@ -51,6 +51,10 @@ p {
   font-size: var(--fs-body);
 }
 
+span {
+  color: var(--clr-accent2);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -518,9 +522,11 @@ body {
   flex-direction: row;
   margin: 0rem 5rem 5rem;
   padding: 0.5rem;
+  height: auto;
   background-color: var(--clr-lighterDark);
   box-shadow: inset 3px 3px 3px var(--clr-accent),
     inset -3px -3px 3px var(--clr-accent);
+  border-radius: 5px;
 }
 
 .work-item-left {
@@ -530,6 +536,7 @@ body {
   width: 400px;
   margin-left: 0.5rem;
   padding-right: 4rem;
+  justify-content: center;
 }
 
 .work-item-title {
@@ -543,8 +550,22 @@ body {
   align-items: center;
 }
 
+.work-item-left .git-logo {
+  justify-self: flex-end;
+}
+
+.icon-plugs {
+  display: flex;
+  flex-direction: row;
+}
+
 .git-logo div {
   margin-left: 0.5rem;
+}
+
+.external-logo img {
+  width: 70px;
+  height: auto;
 }
 
 .work-item-mid {
@@ -553,8 +574,14 @@ body {
   width: 500px;
 }
 
+.work-item-mid:hover {
+  transform: scale(1.2);
+  height: auto;
+  transition: var(--transition);
+}
+
 .project1 {
-  background-image: url(./resources/WachItConfigurationPic.png);
+  background-image: url(./resources/portfolio-pic.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -562,6 +589,14 @@ body {
 }
 
 .project2 {
+  background-image: url(./resources/WachItConfigurationPic.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  opacity: 0.9;
+}
+
+.project3 {
   background-image: url(./resources/PeaceOfCake.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -603,6 +638,17 @@ body {
   .work-title {
     margin-right: 3rem;
   }
+
+  .work-item-mid:hover {
+    transform: scale(1.5);
+    transition: var(--transition);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .work-item-mid {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -612,10 +658,6 @@ body {
 
   .work-item-left {
     padding-right: 0%;
-  }
-
-  .work-item-mid {
-    display: none;
   }
 
   .work-title {
