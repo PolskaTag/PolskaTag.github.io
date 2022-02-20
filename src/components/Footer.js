@@ -11,20 +11,23 @@ function Footer() {
           className="git-plug"
           href="https://github.com/PolskaTag"
           target="_blank"
+          rel="noreferrer"
         >
-          <img className="" src={githubIcon}></img>
+          <img className="" src={githubIcon} alt="Github"></img>
         </a>
         <a
           className="insta-plug"
           href="https://www.instagram.com/philip.lapinski/"
           target="_blank"
+          rel="noreferrer"
         >
-          <img className="" src={instaIcon}></img>
+          <img className="" src={instaIcon} alt="Instagram"></img>
         </a>
         <a
           className="linkedIn-plug"
           href="https://www.linkedin.com/in/philip-lapinski/"
           target="_blank"
+          rel="noreferrer"
         >
           <img className="" src={linkedInIcon}></img>
         </a>
@@ -32,8 +35,9 @@ function Footer() {
           className="twitter-plug"
           href="https://twitter.com/philip_lapinski"
           target="_blank"
+          rel="noreferrer"
         >
-          <img className="" src={twitterIcon}></img>
+          <img className="" src={twitterIcon} alt="Twitter"></img>
         </a>
       </div>
       <div className="creds">

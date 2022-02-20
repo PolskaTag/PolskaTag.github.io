@@ -5,7 +5,7 @@ function Home() {
   return (
     <section className="home" id="home">
       <div className="philip-img">
-        <img src={philipImg}></img>
+        <img src={philipImg} alt="Me :)"></img>
       </div>
       <div className="home-text">
         <h1 className="home-title">Hi, I'm Philip Lapinski.</h1>
@@ -14,7 +14,7 @@ function Home() {
           life. My current focus is to explore the varying realms of software
           developement and see which one I can best serve.
         </h3>
-        <a className="resume" href={resume} target="_blank">
+        <a className="resume" href={resume} target="_blank" rel="noreferrer">
           Resume
         </a>
       </div>

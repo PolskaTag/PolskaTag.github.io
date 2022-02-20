@@ -21,9 +21,10 @@ function Work() {
             <a
               href="https://github.com/PolskaTag/portfolio-v1"
               target="_blank"
+              rel="noreferrer"
               className="git-logo"
             >
-              <img src={gitLogo}></img>
+              <img src={gitLogo} alt="project 1"></img>
               <div>Link to Repo</div>
             </a>
           </div>
@@ -51,9 +52,10 @@ function Work() {
             <a
               href="https://github.com/PolskaTag/project-watchit"
               target="_blank"
+              rel="noreferrer"
               className="git-logo"
             >
-              <img src={gitLogo}></img>
+              <img src={gitLogo} alt="Project 2"></img>
               <div>Link to Repo</div>
             </a>
           </div>
@@ -82,6 +84,7 @@ function Work() {
             <a
               href="https://github.com/PolskaTag"
               target="_blank"
+              rel="noreferrer"
               className="git-logo"
             >
               <img src={gitLogo}></img>
@@ -90,9 +93,10 @@ function Work() {
             <a
               href="http://cis-linux2.temple.edu:8080/FA20_3308_tug68843/#/newHome"
               target="_blank"
+              rel="noreferrer"
               className="external-logo"
             >
-              <img src={externalLogo}></img>
+              <img src={externalLogo} alt="Project 3"></img>
             </a>
           </div>
         </div>

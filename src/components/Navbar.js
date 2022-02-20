@@ -58,7 +58,7 @@ function Navbar() {
       <nav className="main-nav">
         <div className="nav-logo-container">
           <a href="#home" className="nav-logo">
-            <img src={pl}></img>
+            <img src={pl} alt="PL"></img>
           </a>
         </div>
         <div className="nav-links-container">
@@ -77,7 +77,12 @@ function Navbar() {
               <a href="#contact">Contact</a>
             </li>
             <li>
-              <a className="resume" href={resume} target="_blank">
+              <a
+                className="resume"
+                href={resume}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Resume
               </a>
             </li>
