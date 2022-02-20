@@ -87,7 +87,7 @@ function Work() {
               rel="noreferrer"
               className="git-logo"
             >
-              <img src={gitLogo}></img>
+              <img src={gitLogo} alt="Github"></img>
               <div>Link to Repo</div>
             </a>
             <a

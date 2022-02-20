@@ -29,7 +29,7 @@ function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          <img className="" src={linkedInIcon}></img>
+          <img className="" src={linkedInIcon} alt="LinkedIn"></img>
         </a>
         <a
           className="twitter-plug"

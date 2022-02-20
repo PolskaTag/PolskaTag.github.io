@@ -24,7 +24,7 @@ function About() {
         </div>
         <div className="about-image-container">
           <div className="philip-utah-img-outline">
-            <img className="philip-utah-img" src={philipUtah}></img>
+            <img className="philip-utah-img" src={philipUtah} alt="Utah"></img>
           </div>
         </div>
       </div>

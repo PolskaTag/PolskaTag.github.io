@@ -34,7 +34,7 @@ function Navbar() {
     return () => {
       window.removeEventListener("scroll", controlNavbar);
     };
-  }, []);
+  });
 
   const activateHamburger = (e) => {
     const nav = document.querySelector(".nav-links");
