@@ -13,12 +13,16 @@ function Work() {
             Leading a team of 6 students, we built a user-defined action web
             application driven by object detection.
           </p>
-          <a href="/" className="git-logo">
+          <a
+            href="https://github.com/PolskaTag/project-watchit"
+            target="_blank"
+            className="git-logo"
+          >
             <img src={gitLogo}></img>
             <div>Link to Repo</div>
           </a>
         </div>
-        <div className="work-item-mid"></div>
+        <div className="work-item-mid project1"></div>
         <div className="work-item-right">
           <ul>
             <li>React</li>
@@ -38,12 +42,16 @@ function Work() {
             A class project where I built a web application about my love for
             food. I honed the basics of JS, HTML, CSS.
           </p>
-          <a href="/" className="git-logo">
+          <a
+            href="https://github.com/PolskaTag"
+            target="_blank"
+            className="git-logo"
+          >
             <img src={gitLogo}></img>
             <div>Link to Repo</div>
           </a>
         </div>
-        <div className="work-item-mid"></div>
+        <div className="work-item-mid project2"></div>
         <div className="work-item-right">
           <ul>
             <li>HTML</li>
