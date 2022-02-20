@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio-v1/static/css/main.2864de61.css",
-    "main.js": "/portfolio-v1/static/js/main.ddffab50.js",
+    "main.css": "/portfolio-v1/static/css/main.bbb301e5.css",
+    "main.js": "/portfolio-v1/static/js/main.82369478.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio-v1/static/js/787.1ed0c42c.chunk.js",
     "static/media/PeaceOfCake.png": "/portfolio-v1/static/media/PeaceOfCake.fe4d192b613be0982093.png",
     "static/media/IMG_1774square.JPG": "/portfolio-v1/static/media/IMG_1774square.fea0958bc5b12e3e3c42.JPG",
     "static/media/IMG_2168.JPG": "/portfolio-v1/static/media/IMG_2168.7c1cf4156a7a5606147e.JPG",
+    "static/media/portfolio-pic.png": "/portfolio-v1/static/media/portfolio-pic.e2fb7960660a32f0917e.png",
     "static/media/PhilipLapinskiResume.pdf": "/portfolio-v1/static/media/PhilipLapinskiResume.a3d8ace06e0237ee2618.pdf",
     "static/media/WachItConfigurationPic.png": "/portfolio-v1/static/media/WachItConfigurationPic.667ec2613d89cde381eb.png",
-    "static/media/PL.png": "/portfolio-v1/static/media/PL.64f4301ce983d8d65143.png",
+    "static/media/PL-box.png": "/portfolio-v1/static/media/PL-box.1160a4f893174ad6e924.png",
     "index.html": "/portfolio-v1/index.html",
-    "main.2864de61.css.map": "/portfolio-v1/static/css/main.2864de61.css.map",
-    "main.ddffab50.js.map": "/portfolio-v1/static/js/main.ddffab50.js.map",
+    "main.bbb301e5.css.map": "/portfolio-v1/static/css/main.bbb301e5.css.map",
+    "main.82369478.js.map": "/portfolio-v1/static/js/main.82369478.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio-v1/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2864de61.css",
-    "static/js/main.ddffab50.js"
+    "static/css/main.bbb301e5.css",
+    "static/js/main.82369478.js"
   ]
 }
