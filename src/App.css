@@ -112,12 +112,12 @@ body {
   user-select: auto;
 }
 
-/* .scroll-down {
+.scroll-down {
   transform: translate3d(0, -150%, 0);
 }
 
-.scroll-up {
-  transform: translate3d(0, 150%, 0);
+/* .scroll-up {
+  transform: translate3d(0, 100%, 0);
 } */
 
 .main-nav {

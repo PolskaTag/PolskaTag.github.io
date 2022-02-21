@@ -25,7 +25,6 @@ function Navbar() {
       header.classList.add("scroll-up");
     }
 
-    console.log(`last scroll: ${scrollPos} this scroll: ${window.scrollY}`);
     setScrollPos(window.scrollY);
   };
 
