@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
-import pl from "../resources/PL-box.png";
+import pl from "../resources/PL-logo.png";
 import resume from "../resources/PhilipLapinskiResume.pdf";
 
 function Navbar() {
   const [scrollPos, setScrollPos] = useState(0);
   const controlNavbar = () => {
     const header = document.querySelector("header");
+    const navLinks = document.querySelector(".nav-links");
+
     if (window.scrollY <= 0) {
       header.classList.remove("scroll-up");
       return;
@@ -13,14 +15,17 @@ function Navbar() {
 
     if (
       window.scrollY > scrollPos &&
-      !header.classList.contains("scroll-down")
+      !header.classList.contains("scroll-down") &&
+      !navLinks.classList.contains("nav-active")
     ) {
+      // Hide the navbar
       header.classList.remove("scroll-up");
       header.classList.add("scroll-down");
     } else if (
       window.scrollY < scrollPos &&
       header.classList.contains("scroll-down")
     ) {
+      // Show the navbar
       header.classList.remove("scroll-down");
       header.classList.add("scroll-up");
     }
@@ -57,7 +62,7 @@ function Navbar() {
       <nav className="main-nav">
         <div className="nav-logo-container">
           <a href="#home" className="nav-logo">
-            <img src={pl} alt="PL"></img>
+            <img src={pl} alt="PL Logo"></img>
           </a>
         </div>
         <div className="nav-links-container">

@@ -130,7 +130,7 @@ body {
   width: 100%;
   counter-reset: item 0;
   border-bottom: 2px var(--clr-accent) solid;
-  box-shadow: 0px 1px 20px var(--clr-accent);
+  box-shadow: 0px 10px 10px var(--clr-dark);
   background-color: var(--clr-navbar);
 }
 
@@ -163,20 +163,23 @@ body {
   position: relative;
   text-decoration: none;
   top: 5px;
-  width: 110px;
+  width: 90px;
+  margin-left: 1rem;
   height: auto;
   justify-self: center;
 }
 
 .burger {
   display: none;
+  margin-right: 2rem;
 }
 
 .burger div {
   width: 25px;
   height: 2px;
-  background-color: var(--clr-accent);
+  background-color: var(--clr-darkerLight);
   margin: 5px;
+  opacity: 0.9;
 }
 
 .nav-active {
@@ -203,7 +206,7 @@ body {
     position: absolute;
     right: 0px;
     height: 92vh;
-    top: 6.5vh;
+    top: 80px;
     padding: 0%;
     margin: 0;
     display: flex;
@@ -537,7 +540,7 @@ body {
   height: auto;
   background-color: var(--clr-lighterDark);
   box-shadow: inset 3px 3px 3px var(--clr-accent),
-    inset -3px -3px 3px var(--clr-accent);
+    inset -3px -3px 3px var(--clr-accent), 3px 3px 15px var(--clr-dark);
   border-radius: 5px;
 }
 
