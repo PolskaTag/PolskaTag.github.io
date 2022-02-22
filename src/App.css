@@ -524,6 +524,12 @@ body {
   .about {
     margin: 0;
   }
+
+  .about-title::after {
+    margin: 0;
+    top: 0%;
+    width: auto;
+  }
 }
 
 /* work */
