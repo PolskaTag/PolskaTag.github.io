@@ -3,9 +3,7 @@ import externalLogo from "../resources/bx_link-external.png";
 function Work() {
   return (
     <section className="work" id="work">
-      <h1 className="work-title">
-        Some things I've done. <hr />
-      </h1>
+      <h1 className="work-title">Some things I've done.</h1>
       {/* work items */}
       <div className="work-item">
         <div className="work-item-left">
@@ -25,7 +23,7 @@ function Work() {
               className="git-logo"
             >
               <img src={gitLogo} alt="project 1"></img>
-              <div>Link to Repo</div>
+              {/* <div>Link to Repo</div> */}
             </a>
           </div>
         </div>
@@ -56,7 +54,7 @@ function Work() {
               className="git-logo"
             >
               <img src={gitLogo} alt="Project 2"></img>
-              <div>Link to Repo</div>
+              {/* <div>Link to Repo</div> */}
             </a>
           </div>
         </div>
@@ -88,7 +86,7 @@ function Work() {
               className="git-logo"
             >
               <img src={gitLogo} alt="Github"></img>
-              <div>Link to Repo</div>
+              {/* <div>Link to Repo</div> */}
             </a>
             <a
               href="http://cis-linux2.temple.edu:8080/FA20_3308_tug68843/#/newHome"

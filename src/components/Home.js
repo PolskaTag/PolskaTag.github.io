@@ -4,6 +4,7 @@ import resume from "../resources/PhilipLapinskiResume.pdf";
 function Home() {
   return (
     <section className="home" id="home">
+      <div className="home-background"></div>
       <div className="philip-img">
         <img src={philipImg} alt="Me :)"></img>
       </div>
