@@ -72,7 +72,7 @@ function Work() {
 
       <div className="work-item">
         <div className="work-item-left">
-          <h2 className="work-item-title">PeaceOfCake!</h2>
+          <h2 className="work-item-title">Tablespoon Treats</h2>
           <span>(2020) September - December</span>
           <p>
             A class project where I built a web application about my love for
