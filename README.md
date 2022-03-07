@@ -20,6 +20,17 @@ The following pictures are **frames** from Figma that capture the different sect
 ### Contact
 ![image](https://user-images.githubusercontent.com/41872747/156813195-5201756f-2a96-407a-a937-a314af837b18.png)
 
+### Blog Overview
+![image](https://user-images.githubusercontent.com/41872747/156950907-f8f6ce8a-6bcd-4ee9-881e-ef24eea402bb.png)
+
+### Blog Post
+![image](https://user-images.githubusercontent.com/41872747/156950922-120b8537-788f-4224-a571-a2c11662f3c5.png)
+
+### Picture Post
+![image](https://user-images.githubusercontent.com/41872747/156950988-bc20005d-d875-445b-84c5-ebb8b695eede.png)
+
+
+
 ## Features
 | Components | Description | Status |
 | --- | ----------- | --- |
