@@ -79,7 +79,7 @@ body {
 }
 
 .content {
-  margin: 0 5rem;
+  margin: 80px 5rem;
 }
 
 @media screen and (max-width: 768px) {
