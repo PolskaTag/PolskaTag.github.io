@@ -1,4 +1,7 @@
 import "./BlogPost.css";
+import person from "../resources/person.png";
+import guitar from "../resources/guitar.png";
+import code from "../resources/code.png";
 
 // {
 //     title: "Helping Ukraine, UECC Ukrainian Center",
@@ -24,7 +27,16 @@ import "./BlogPost.css";
 export default function BlogPost(props) {
   console.log(props.post);
   const typeToPic = (type) => {
-    return type;
+    switch (type) {
+      case "professional":
+        return <img src={code} placeholder={type} />;
+      case "life":
+        return <img src={person} placeholder={type} />;
+      case "fun":
+        return <img src={guitar} placeholder={type} />;
+      default:
+        return type;
+    }
   };
   return (
     <div className="blog-post">
