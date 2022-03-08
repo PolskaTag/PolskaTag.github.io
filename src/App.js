@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Work from "./components/Work";
 import Navbar from "./components/Navbar";
+import { Outlet } from "react-router-dom";
 import "./App.css";
 
 function App() {
@@ -11,10 +12,7 @@ function App() {
     <>
       <Navbar />
       <div className="content">
-        <Home />
-        <About />
-        <Work />
-        <Contact />
+        <Outlet />
       </div>
       <Footer />
     </>
