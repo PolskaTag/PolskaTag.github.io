@@ -1,0 +1,25 @@
+.blog-post {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* max-height: 300px; */
+  margin: 0 0 2rem;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+}
+
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--clr-accent);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.blog-content {
+  background-color: var(--clr-lighterDark);
+  padding: 0.5rem 1rem;
+  margin-top: -0.5rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}

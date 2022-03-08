@@ -14,6 +14,8 @@
  * have a description of the picture (optional).
  */
 import "./Blog.css";
+import { useState } from "react";
+import BlogPost from "./BlogPost";
 
 const blog_posts = [
   {
@@ -64,7 +66,12 @@ const blog_posts = [
 export default function Blog() {
   return (
     <div className="blog">
-      <div className="blog-left">Left Side</div>
+      <div className="blog-left">
+        {blog_posts.map((post) => {
+          console.log(post);
+          return <BlogPost post={post} />;
+        })}
+      </div>
       <div className="blog-right">
         <div className="sample-item">hello</div>
       </div>
