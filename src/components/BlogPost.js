@@ -30,8 +30,8 @@ export default function BlogPost(props) {
     <div className="blog-post">
       <div className="blog-header">
         <div className="blog-title">
-          <h1>{props.post.title}</h1>
-          <h2>{props.post.date}</h2>
+          <h2>{props.post.title}</h2>
+          <h3>{props.post.date}</h3>
         </div>
         <div className="blog-type">{typeToPic(props.post.type)}</div>
       </div>

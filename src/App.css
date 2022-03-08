@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,700");
 
 *,
 *::before,
@@ -17,7 +17,7 @@
   --clr-darkerLight: #f6f6f6;
   --clr-dark: rgb(33, 33, 33);
   --clr-lighterDark: rgba(196, 196, 196, 0.1);
-  --clr-accent: #346751;
+  --clr-accent: #346751d3;
   --clr-navbar: rgb(31, 34, 31);
   --clr-accent2: #c84b31;
 
