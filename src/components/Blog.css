@@ -19,6 +19,7 @@
   margin-left: 5vw;
   overflow-y: scroll;
   overflow-x: hidden;
+  box-shadow: 0 0 10px black;
 }
 
 .blog-right::-webkit-scrollbar {

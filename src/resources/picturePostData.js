@@ -1,22 +1,29 @@
-import redRocks from "./IMG_2020.JPG";
+import arches from "./arches.jpg";
 import meOnRedRocks from "./IMG_2168.JPG";
+import bigfoot from "./bigfoot.jpg";
+import purpleFlower from "./purpleFlower.JPG";
+import patBigBend from "./patBigBend.JPG";
 
 const picturePostData = [
   {
-    title: "Red Rocks",
-    img: <img src={redRocks} />,
+    title: "Arches National Park",
+    img: <img src={arches} />,
   },
   {
-    title: "Me On Red Rocks",
+    title: "Purple Flower",
+    img: <img src={purpleFlower} />,
+  },
+  {
+    title: "I Found Bigfoot!",
+    img: <img src={bigfoot} />,
+  },
+  {
+    title: "Me At Arches",
     img: <img src={meOnRedRocks} />,
   },
   {
-    title: "Red Rocks",
-    img: <img src={redRocks} />,
-  },
-  {
-    title: "Me On Red Rocks",
-    img: <img src={meOnRedRocks} />,
+    title: "Pat At Big Bend",
+    img: <img src={patBigBend} />,
   },
 ];
 
