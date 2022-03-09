@@ -9,7 +9,10 @@ export default function PicturePost(props) {
   return (
     <div className="picture-post">
       {props.post.img}
-      <div className="picture-title-container">{props.post.title}</div>
+      <div className="picture-title-container">
+        <h3>{props.post.title}</h3>
+        <div className="picture-title-empty"></div>
+      </div>
     </div>
   );
 }

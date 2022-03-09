@@ -92,6 +92,10 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid slategrey;
 }
 
+.hide {
+  display: none !important;
+}
+
 .content {
   margin: 80px 5rem;
 }

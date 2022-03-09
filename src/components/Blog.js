@@ -12,6 +12,11 @@
  * have a preview and a title of the picture. The user can click on the picture
  * to have an expanded version of the picture appear. It would be nice to also
  * have a description of the picture (optional).
+ *
+ * Thought: as the amount of blogs grow, the page height will grow. As of now there
+ * is no pagination - and im not sure if I even want to include that. I was thinking
+ * though: what if I make a "table of contents" side bar that lets you travel to
+ * a specified blog post quickly instead of scrolling through everything?
  */
 import "./Blog.css";
 import { useState, useEffect } from "react";
@@ -24,8 +29,36 @@ const blogPostData = getBlogData();
 const picturePostData = getPicturePostData();
 
 export default function Blog() {
+  const showBlogs = () => {
+    let blog = document.querySelector(".blog-left");
+    let pictures = document.querySelector(".blog-right");
+
+    blog.classList.remove("section-hide");
+    pictures.classList.add("section-hide");
+  };
+
+  const showPictures = () => {
+    let blog = document.querySelector(".blog-left");
+    let pictures = document.querySelector(".blog-right");
+
+    pictures.classList.remove("section-hide");
+    // we add these styles because if the window gets resized, the right side
+    // of the blog's display gets set to none.
+    pictures.style.display = "flex";
+    pictures.style.flexDirection = "column";
+    blog.classList.add("section-hide");
+  };
+
   return (
     <div className="blog">
+      <div className="toggle-buttons">
+        <div className="blog-button" onClick={showBlogs}>
+          Blog Posts
+        </div>
+        <div className="blog-button" onClick={showPictures}>
+          Pictures
+        </div>
+      </div>
       <div className="blog-left">
         {blogPostData.map((post, index) => {
           return <BlogPost post={post} key={index} />;
