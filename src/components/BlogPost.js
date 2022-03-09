@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./BlogPost.css";
 import person from "../resources/person.png";
 import guitar from "../resources/guitar.png";
@@ -25,7 +26,15 @@ import code from "../resources/code.png";
 //   }
 
 export default function BlogPost(props) {
-  console.log(props.post);
+  const [showBlog, setShowBlog] = useState("blog-content preview-content");
+
+  const onBlogPostClick = () => {
+    if (showBlog.match("preview-content")) {
+      setShowBlog("blog-content");
+    } else {
+      setShowBlog("blog-content preview-content");
+    }
+  };
   const typeToPic = (type) => {
     switch (type) {
       case "professional":
@@ -40,14 +49,14 @@ export default function BlogPost(props) {
   };
   return (
     <div className="blog-post">
-      <div className="blog-header">
+      <div className="blog-header" onClick={onBlogPostClick}>
         <div className="blog-title">
           <h2>{props.post.title}</h2>
           <h3>{props.post.date}</h3>
         </div>
         <div className="blog-type">{typeToPic(props.post.type)}</div>
       </div>
-      <div className="blog-content">{props.post.content}</div>
+      <div className={showBlog}>{props.post.content}</div>
     </div>
   );
 }

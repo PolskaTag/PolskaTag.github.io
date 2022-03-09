@@ -14,19 +14,18 @@
  * have a description of the picture (optional).
  */
 import "./Blog.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BlogPost from "./BlogPost";
 import getBlogData from "../resources/blogData";
 
-const blogPosts = getBlogData();
+const blogPostData = getBlogData();
 
 export default function Blog() {
   return (
     <div className="blog">
       <div className="blog-left">
-        {blogPosts.map((post) => {
-          console.log(post);
-          return <BlogPost post={post} />;
+        {blogPostData.map((post, index) => {
+          return <BlogPost post={post} key={index} />;
         })}
       </div>
       <div className="blog-right">
