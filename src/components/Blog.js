@@ -65,6 +65,7 @@ export default function Blog() {
         })}
       </div>
       <div className="blog-right">
+        <h1 className="blog-right-title">Some Cool Pics!</h1>
         {picturePostData.map((post, index) => {
           return <PicturePost post={post} key={index} />;
         })}
