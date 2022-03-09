@@ -6,22 +6,19 @@
 }
 
 .blog-left {
-  /* background-color: var(--clr-lighterDark); */
-  width: calc(100% - 350px);
+  width: calc(100% - 500px);
   min-width: 600px;
 }
 
 .blog-right {
   position: fixed;
-  right: 5vw;
+  right: 4vw;
   top: 100px;
   float: right;
   background-color: var(--clr-lighterDark);
-  width: 300px;
+  border-radius: 10px;
+  width: 400px;
   height: 80%;
   overflow-y: scroll;
-}
-
-.sample-item {
-  height: 1000%;
+  overflow-x: hidden;
 }

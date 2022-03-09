@@ -1,0 +1,8 @@
+.picture-post {
+  padding: 1rem;
+}
+
+.picture-post img {
+  width: 100%;
+  height: auto;
+}

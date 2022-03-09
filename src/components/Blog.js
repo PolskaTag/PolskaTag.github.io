@@ -17,8 +17,11 @@ import "./Blog.css";
 import { useState, useEffect } from "react";
 import BlogPost from "./BlogPost";
 import getBlogData from "../resources/blogData";
+import getPicturePostData from "../resources/picturePostData";
+import PicturePost from "./PicturePost";
 
 const blogPostData = getBlogData();
+const picturePostData = getPicturePostData();
 
 export default function Blog() {
   return (
@@ -29,7 +32,9 @@ export default function Blog() {
         })}
       </div>
       <div className="blog-right">
-        <div className="sample-item">hello</div>
+        {picturePostData.map((post, index) => {
+          return <PicturePost post={post} key={index} />;
+        })}
       </div>
     </div>
   );
