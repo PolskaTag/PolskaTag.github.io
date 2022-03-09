@@ -22,3 +22,17 @@
   overflow-y: scroll;
   overflow-x: hidden;
 }
+
+.blog-right::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.blog-right::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.blog-right::-webkit-scrollbar-thumb {
+  background-color: var(--clr-lighterDark);
+  border-radius: 10px;
+  outline: 1px solid slategrey;
+}
