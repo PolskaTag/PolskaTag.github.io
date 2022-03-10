@@ -18,6 +18,7 @@
   --clr-dark: rgb(33, 33, 33);
   --clr-lighterDark: rgba(196, 196, 196, 0.1);
   --clr-accent: #346751d3;
+  --clr-accent-faded: #3467515b;
   --clr-navbar: rgb(31, 34, 31);
   --clr-accent2: #c84b31;
 
@@ -295,10 +296,18 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   background-color: rgb(36, 36, 36);
   left: 0;
+  top: 80px;
   width: 100%;
   height: 100%;
   z-index: -2;
+  content: " ";
   overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .home-background {
+    height: 120%;
+  }
 }
 
 .home .home-text {
@@ -307,7 +316,13 @@ body::-webkit-scrollbar-thumb {
   align-items: flex-start;
   margin: 5em;
   align-self: center;
-  text-align: end;
+  text-align: center;
+}
+
+.home-text h3 {
+  width: 30vw;
+  min-width: 200px;
+  align-self: center;
 }
 
 .home-title {
