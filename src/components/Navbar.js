@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { NavHashLink as HashLink } from "react-router-hash-link";
 import pl from "../resources/PL-logo.png";
 import resume from "../resources/PhilipLapinskiResume.pdf";
 
@@ -61,24 +63,30 @@ function Navbar() {
     <header className={`navbar-header`}>
       <nav className="main-nav">
         <div className="nav-logo-container">
-          <a href="#home" className="nav-logo">
+          <HashLink to={{ pathname: "/", hash: "#home" }} className="nav-logo">
             <img src={pl} alt="PL Logo"></img>
-          </a>
+          </HashLink>
         </div>
         <div className="nav-links-container">
           <ul className="nav-links">
             <li>
-              {" "}
-              <a href="#home">Home</a>
+              <Link to="/blog">Blog</Link>
             </li>
             <li>
-              <a href="#about">About Me</a>
+              <HashLink to={{ pathname: "/", hash: "#home" }}>Home</HashLink>
             </li>
             <li>
-              <a href="#work">My Work</a>
+              <HashLink to={{ pathname: "/", hash: "#about" }}>
+                About Me
+              </HashLink>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <HashLink to={{ pathname: "/", hash: "#work" }}>My Work</HashLink>
+            </li>
+            <li>
+              <HashLink to={{ pathname: "/", hash: "#contact" }}>
+                Contact
+              </HashLink>
             </li>
             <li>
               <a
