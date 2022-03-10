@@ -111,7 +111,7 @@ const blog_posts = [
           I encourage anyone that would like to get involved google "Help
           Ukraine ***Your City Name***". If you're in the Philadelphia area,
           visit{" "}
-          <a href="https://www.ueccphila.org/" target="_blank">
+          <a href="https://www.ueccphila.org/" target="_blank" rel="noreferrer">
             UECC
           </a>{" "}
           and take a look to see if there's anything you can do.

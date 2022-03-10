@@ -38,11 +38,11 @@ export default function BlogPost(props) {
   const typeToPic = (type) => {
     switch (type) {
       case "professional":
-        return <img src={code} placeholder={type} />;
+        return <img src={code} alt={type} />;
       case "life":
-        return <img src={person} placeholder={type} />;
+        return <img src={person} alt={type} />;
       case "fun":
-        return <img src={guitar} placeholder={type} />;
+        return <img src={guitar} alt={type} />;
       default:
         return type;
     }

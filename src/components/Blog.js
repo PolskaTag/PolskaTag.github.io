@@ -19,7 +19,6 @@
  * a specified blog post quickly instead of scrolling through everything?
  */
 import "./Blog.css";
-import { useState, useEffect } from "react";
 import BlogPost from "./BlogPost";
 import getBlogData from "../resources/blogData";
 import getPicturePostData from "../resources/picturePostData";
