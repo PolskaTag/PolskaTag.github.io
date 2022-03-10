@@ -39,7 +39,7 @@ The following pictures are **frames** from Figma that capture the different sect
 | About | A short introduction to myself and my developing skills | ✔️ |
 | Work | My showcased project list, with information on each project | ✔️ |
 | Contact | A short outro that allows people to connect with me | ✔️ |
-| Blog | Keep up on the latest developement in my life | ❌ |
+| Blog | Keep up on the latest developement in my life | ✔️ |
 
 ### Blog
 A blog is an interesting component. They allow you to communicate the things that you're doing, whether that be coding or eating a delicous dessert. I got the idea to start a blog from my research in AWS Serverless technologies like Lambda. I saw this great YouTube [video](https://www.youtube.com/watch?v=DdyhdnWVukc) from a creator **Emily Shea**. Following the stream of info she put out, I landed on her personal [webpage](https://emshea.com/) and thought:
