@@ -1,6 +1,6 @@
 const blog_posts = [
   {
-    title: "Starting a blog!",
+    title: "Starting a blog",
     date: "March 6th, 2022",
     type: "professional",
     content: (
@@ -45,7 +45,7 @@ const blog_posts = [
     ),
   },
   {
-    title: "Helping Ukraine, UECC Ukrainian Center",
+    title: "Helping Ukraine",
     date: "March 5th, 2022",
     type: "life",
     content: (
