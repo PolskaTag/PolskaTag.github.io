@@ -41,10 +41,15 @@ function Work() {
       <div className="work-item">
         <div className="work-item-left">
           <h2 className="work-item-title">WatchIT</h2>
-          <span>(2021) September - December</span>
+          <span>(2021) September</span>
           <p>
-            Leading a team of 6 students, we built a user-defined action web
-            application driven by object detection.
+            Leading a team of 6 students, I built a prototype of a user-defined
+            action web application driven by object detection.
+          </p>
+          <p>
+            WatchIT lets people use their computers as lightweight object
+            detectors that can perform basic actions upon detection like sending
+            an email or playing a sound.
           </p>
           <div className="icon-plugs">
             <a
