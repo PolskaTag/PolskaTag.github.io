@@ -164,6 +164,10 @@ body::-webkit-scrollbar-thumb {
   margin-right: 2rem;
 }
 
+.nav-links a {
+  padding: 1rem;
+}
+
 .main-nav ul {
   list-style: none;
 }
@@ -171,7 +175,7 @@ body::-webkit-scrollbar-thumb {
 .main-nav a {
   color: inherit;
   text-decoration: none;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 .main-nav a:hover {
@@ -235,9 +239,14 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--clr-dark);
     width: 30%;
     transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    transition: transform 0.25s ease-in;
     border-left: 2px var(--clr-accent) solid;
+    padding-bottom: 15vh;
     /* opacity: 0.99; */
+  }
+
+  .nav-links a {
+    padding: 0;
   }
 
   .nav-links li {
@@ -246,6 +255,10 @@ body::-webkit-scrollbar-thumb {
 
   .nav-links li:hover {
     font-weight: var(--fw-bold);
+  }
+
+  .nav-button {
+    padding: 0.75rem 0.5rem !important;
   }
 
   .burger {
@@ -594,6 +607,7 @@ body::-webkit-scrollbar-thumb {
   margin: 0rem 5rem 5rem;
   padding: 0.5rem;
   height: auto;
+  min-height: 400px;
   background-color: var(--clr-lighterDark);
   box-shadow: inset 3px 3px 3px var(--clr-accent),
     inset -3px -3px 3px var(--clr-accent), 3px 3px 15px var(--clr-dark);
@@ -619,6 +633,11 @@ body::-webkit-scrollbar-thumb {
   text-decoration: none;
   color: inherit;
   align-items: center;
+}
+
+.work-item p {
+  font-weight: 300;
+  font-size: 1.1rem;
 }
 
 .work-item-left .git-logo {

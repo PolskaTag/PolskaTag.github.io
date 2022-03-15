@@ -52,8 +52,8 @@ function Navbar() {
       if (link.style.animation) {
         link.style.animation = "";
       } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${
-          index / 7 + 1
+        link.style.animation = `navLinkFade 0.3s ease forwards ${
+          index / 10 + 0.3
         }s`;
       }
     });
@@ -90,7 +90,7 @@ function Navbar() {
             </li>
             <li>
               <a
-                className="resume"
+                className="resume nav-button"
                 href={resume}
                 target="_blank"
                 rel="noreferrer"
