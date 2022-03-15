@@ -270,16 +270,17 @@ body::-webkit-scrollbar-thumb {
 /* Home Section */
 .home {
   display: flex;
-  /* align-items: stretch; */
+  align-items: stretch;
+  margin: 0 -2rem;
   justify-content: space-between;
   flex-grow: 1;
-  /* margin-top: 200px; */
   min-height: 100vh;
+  background-color: rgb(36, 36, 36);
 }
 
 .philip-img {
   display: flex;
-  flex-grow: 1;
+  flex-grow: 2;
   /* width: 50%; */
   /* height: auto; */
   align-items: center;
@@ -305,24 +306,6 @@ body::-webkit-scrollbar-thumb {
   z-index: 2;
 }
 
-.home-background {
-  position: absolute;
-  background-color: rgb(36, 36, 36);
-  left: 0;
-  top: 80px;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-  content: " ";
-  overflow-x: hidden;
-}
-
-@media screen and (max-width: 768px) {
-  .home-background {
-    height: 120%;
-  }
-}
-
 .home .home-text {
   display: flex;
   flex-direction: column;
@@ -330,6 +313,7 @@ body::-webkit-scrollbar-thumb {
   margin: 5em;
   align-self: center;
   text-align: center;
+  flex-grow: 1;
 }
 
 .home-text h3 {
@@ -367,7 +351,8 @@ body::-webkit-scrollbar-thumb {
   .home {
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
+    margin: 0 -1rem;
+    padding-top: 150px;
   }
 
   .home-title {
@@ -375,6 +360,12 @@ body::-webkit-scrollbar-thumb {
     width: auto;
     padding: 1.5rem 0.5rem;
     margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .philip-img img {
+    min-width: 200px;
   }
 }
 
@@ -419,38 +410,38 @@ body::-webkit-scrollbar-thumb {
 .about-image-container {
   display: flex;
   flex-grow: 1;
-  justify-content: center;
+  justify-self: center;
   align-items: center;
 }
 
 .philip-utah-img {
   max-width: 65%;
-  min-width: 200px;
+  min-width: 100px;
   height: auto;
   transform: translateY(5%);
   box-shadow: 6px -3px 10px var(--clr-dark);
-  align-self: center;
+  align-items: center;
   justify-self: center;
   border-radius: 8px;
 }
 
 .philip-utah-img-outline {
-  display: inline-block;
+  display: flex;
   position: relative;
+  justify-content: center;
 }
 
 .philip-utah-img-outline:before {
   position: absolute;
   top: -5%;
-  left: 10%;
+  left: 25%;
   width: 65%;
-  min-width: 200px;
+  min-width: 100px;
   height: 100%;
   border: 4px solid rgba(177, 72, 27, 1);
   border-radius: 8px;
   content: "";
   box-shadow: 4px -4px 20px var(--clr-accent);
-  /* background-color: var(--clr-lighterDark); */
 }
 
 .skills {
@@ -578,6 +569,12 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .about-title {
+    text-align: center;
+  }
+}
+
 /* work */
 .work {
   display: flex;
@@ -599,6 +596,13 @@ body::-webkit-scrollbar-thumb {
   height: 1px;
   border: none;
   width: 75%;
+}
+
+@media screen and (max-width: 480px) {
+  .work-title {
+    margin: 0 0 1rem;
+    text-align: center;
+  }
 }
 
 /* Contact */
