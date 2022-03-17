@@ -23,6 +23,8 @@
 
 .work-item-title {
   margin: 0;
+  /* overflow-wrap: break-word; */
+  flex-wrap: wrap;
 }
 
 .work-item-left a {
@@ -140,7 +142,7 @@
 
 @media screen and (max-width: 768px) {
   .work-item {
-    margin: 0 auto 3rem;
+    margin: 0 1rem 3rem;
   }
 
   .work-item-left {
@@ -179,5 +181,27 @@
     margin: 0.5rem 0 0;
     width: auto;
     justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .work-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .work-item-title {
+    font-size: 10vw;
+  }
+
+  .work-item-left-header span {
+    font-size: 8vw;
+  }
+
+  .work-item-left-description p {
+    font-size: 12px !important;
+  }
+
+  .work-item-left-plugs a {
+    min-width: 0;
   }
 }
