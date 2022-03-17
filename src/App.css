@@ -13,12 +13,12 @@
   --fw-reg: 300;
   --fw-bold: 900;
 
-  --clr-light: #f6f6f6;
-  --clr-darkerLight: #f6f6f6;
+  --clr-light: #f0fff0;
+  --clr-darkerLight: #e0ddd8;
   --clr-dark: rgb(33, 33, 33);
   --clr-lighterDark: rgba(196, 196, 196, 0.1);
-  --clr-accent: #346751d3;
-  --clr-accent-faded: #3467515b;
+  --clr-accent: #115234;
+  --clr-accent-faded: #115234b2;
   --clr-navbar: rgb(31, 34, 31);
   --clr-accent2: #c84b31;
 
@@ -180,6 +180,7 @@ body::-webkit-scrollbar-thumb {
 
 .main-nav a:hover {
   color: var(--clr-accent);
+  transition: var(--transition);
 }
 
 .nav-logo img {
@@ -324,7 +325,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 7px;
   padding: 1rem 2rem;
   margin-top: 50px;
-  color: var(--clr-accent);
+  color: var(--clr-darkerLight);
   transition: 0.3s;
   font-weight: var(--fw-bold);
   align-self: center;
@@ -404,7 +405,7 @@ body::-webkit-scrollbar-thumb {
   display: block;
   position: relative;
   width: 7em;
-  height: 1px;
+  height: 2px;
   top: -30px;
   margin-left: 18rem;
   opacity: 0.5;
@@ -653,7 +654,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 7px;
   padding: 1rem;
   margin-top: 50px;
-  color: var(--clr-accent);
+  color: var(--clr-darkerLight);
   transition: 0.3s;
 }
 .email-link:hover {

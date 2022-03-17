@@ -82,7 +82,7 @@
 .blog-post p {
   /* font-size: 24px; */
   font-weight: 300;
-  color: var(--clr-darkerLight);
+  color: var(--clr-light);
 }
 
 /* 480px breakpoint */
